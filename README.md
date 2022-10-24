@@ -1,4 +1,4 @@
-# AWS Terraform Remote State with S3 and DynamoDB
+# AWS Terraform Compliant S3 Bucket
 
 Basic module to create a S3 bucket with recommended enhanced security configuration.
 
