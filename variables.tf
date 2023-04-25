@@ -10,3 +10,9 @@ variable "access_logging_target_bucket" {
   type        = string
   default     = null
 }
+
+variable "acl_enabled" {
+  description = "Enable ACL on the bucket"
+  type        = bool
+  default     = false
+}
