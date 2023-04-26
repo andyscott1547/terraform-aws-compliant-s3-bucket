@@ -4,6 +4,8 @@ resource "aws_s3_bucket" "this" {
   bucket = local.name
   #checkov:skip=CKV_AWS_144:This bucket does not require cross region replication.
   #checkov:skip=CKV_AWS_145:This bucket is encrypted with default aws kms key.
+  #checkov:skip=CKV2_AWS_61:This bucket does not require lifecycle policy.
+  #checkov:skip=CKV2_AWS_62:This bucket does not require notifications.
 }
 
 resource "aws_s3_bucket_acl" "this" {
